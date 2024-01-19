@@ -1,0 +1,7 @@
+def hammingWeight(self, n: int) -> int:
+        count = 0
+        bin_convert = bin(n).replace("0b", "")  
+        for i in bin_convert:
+            if 0 ^ int(i) == 1:
+                count += 1  
+        return count
